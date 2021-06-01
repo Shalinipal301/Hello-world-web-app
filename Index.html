@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+<div class="page-wrap">
+    <h1>My first Handlebars Page</h1>
+    <h2>Hello World</h2>
+    <div id="pets-container"></div>
+  </div>
+  <script id="petsTemplate" type="text/x-handlebars-template">
+    {{#each Directory}}
+        <h3>{{name}}</h3>
+    {{/each }}
+</script>
+  <script src="handlebars-v4.7.7.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
